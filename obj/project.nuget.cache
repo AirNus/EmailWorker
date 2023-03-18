@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "OAc4lnjA87J0Wh6DErDp6A3eS7VfO6Uwp3TRPOvp/BcjLQs9iCzcLaUpx5ip7TRodySY4JFFr7pxGvtMcUMiPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MAZITOVAE\\source\\repos\\send_mail_signa\\send_mail_signa.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MAZITOVAE\\.nuget\\packages\\mailkit\\3.6.0\\mailkit.3.6.0.nupkg.sha512",
+    "C:\\Users\\MAZITOVAE\\.nuget\\packages\\mimekit\\3.6.0\\mimekit.3.6.0.nupkg.sha512",
+    "C:\\Users\\MAZITOVAE\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\MAZITOVAE\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
+    "C:\\Users\\MAZITOVAE\\.nuget\\packages\\system.formats.asn1\\6.0.0\\system.formats.asn1.6.0.0.nupkg.sha512",
+    "C:\\Users\\MAZITOVAE\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\MAZITOVAE\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.0\\system.security.cryptography.pkcs.6.0.0.nupkg.sha512",
+    "C:\\Users\\MAZITOVAE\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
