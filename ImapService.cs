@@ -17,9 +17,10 @@ namespace send_mail_signa
         {
             var pathList = new Dictionary<string,string>();
             var emailOwner = new ImapClient();
+            string pass = FileService.ReadFile(Environment.CurrentDirectory+@"\ainur.mazitov.txt");
 
             emailOwner.Connect("imap.mail.ru", 993, true);
-            emailOwner.Authenticate("ainur.mazitov@mail.ru", "bZJxgg0fyd2Uiq1RrfYG");
+            emailOwner.Authenticate("ainur.mazitov@mail.ru", pass);
 
             emailOwner.Inbox.Open(MailKit.FolderAccess.ReadOnly);
 

@@ -12,7 +12,7 @@ namespace send_mail_signa
     {
         internal static void SendMessage(MailMessage message)
         {
-
+            string pass = FileService.ReadFile(Environment.CurrentDirectory + @"\stanislav.inshakov.txt");
             SmtpClient smtpClient = new SmtpClient()
             {
                 Host = "smtp.mail.ru",
@@ -20,7 +20,7 @@ namespace send_mail_signa
                 EnableSsl = true,
                 DeliveryMethod = SmtpDeliveryMethod.Network,
                 UseDefaultCredentials = false,
-                Credentials = new NetworkCredential(message.Sender.Address, "ezpvjvNEUkitaLTY2jMi")
+                Credentials = new NetworkCredential(message.Sender.Address, pass)
                 
             };
 

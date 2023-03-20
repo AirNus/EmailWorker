@@ -10,8 +10,8 @@ string messagePath = Environment.CurrentDirectory + @"\EmailData.txt";
 string signaturePath = Environment.CurrentDirectory + @"\EmailSignature.txt";
 string publicKeyPath = Environment.CurrentDirectory + @"\EmailPublicKey.txt";
 
-MailAddress fromAddress = new MailAddress("stanislav.inshakov@mail.ru"); //ezpvjvNEUkitaLTY2jMi
-MailAddress toAddress = new MailAddress("ainur.mazitov@mail.ru"); //bZJxgg0fyd2Uiq1RrfYG
+MailAddress fromAddress = new MailAddress("stanislav.inshakov@mail.ru"); 
+MailAddress toAddress = new MailAddress("ainur.mazitov@mail.ru"); 
 
 //Записываем сообщение в файл
 string messageBody = "Сообщение которое будет подписано";
