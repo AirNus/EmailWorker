@@ -9,20 +9,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace send_mail_signa
+namespace send_mail_signa.Services
 {
     internal class ImapService
     {
-        internal static Dictionary<string,string> GetLastEmail(string sender)
+        internal static Dictionary<string, string> GetLastEmail(string sender)
         {
-            var pathList = new Dictionary<string,string>();
+            var pathList = new Dictionary<string, string>();
             var emailOwner = new ImapClient();
-            string pass = FileService.ReadFile(Environment.CurrentDirectory+@"\ainur.mazitov.txt");
+            string pass = FileService.ReadFile(Environment.CurrentDirectory + @"\ainur.mazitov.txt");
 
             emailOwner.Connect("imap.mail.ru", 993, true);
             emailOwner.Authenticate("ainur.mazitov@mail.ru", pass);
 
-            emailOwner.Inbox.Open(MailKit.FolderAccess.ReadOnly);
+            emailOwner.Inbox.Open(FolderAccess.ReadOnly);
 
             var uids = emailOwner.Inbox.Search(SearchQuery.SentSince(DateTime.Now.AddDays(-7)));
             var uid = emailOwner.Inbox.FirstUnread;

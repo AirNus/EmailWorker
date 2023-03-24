@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace send_mail_signa
+namespace send_mail_signa.EDS
 {
     internal class Signature
     {

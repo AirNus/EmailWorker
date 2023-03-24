@@ -6,7 +6,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace send_mail_signa
+namespace send_mail_signa.Services
 {
     internal class SmtpService
     {
@@ -21,7 +21,7 @@ namespace send_mail_signa
                 DeliveryMethod = SmtpDeliveryMethod.Network,
                 UseDefaultCredentials = false,
                 Credentials = new NetworkCredential(message.Sender.Address, pass)
-                
+
             };
 
             smtpClient.Send(message);
